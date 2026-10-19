@@ -1,0 +1,11 @@
+# Fichiers lourds du press kit : ils partent dans les releases GitHub, pas dans le dépôt
+presskit-src/04_screenshots/
+presskit-src/05_gifs/
+presskit-src/06_videos/
+presskit-src/trailer/
+dist/
+# Captures brutes avant préparation
+_captures/
+# Fichiers système
+.DS_Store
+Thumbs.db

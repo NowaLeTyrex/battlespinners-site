@@ -1,0 +1,34 @@
+BATTLESPINNERS — FACT SHEET
+
+Developer and publisher: Nowa Letyrex, solo developer
+Based in: Toulouse, France
+Release date: 2027
+Platforms: Windows and Linux, on Steam
+Price: To be announced
+Players: 1 to 4 on one screen; online through Steam Remote Play Together
+Languages: [TO CHECK] English, French, Spanish
+Engine: Godot
+Steam: https://store.steampowered.com/app/4324770/BattleSpinners/
+Website: https://battlespinnersgame.com/
+Press contact: press@battlespinnersgame.com
+
+ONE-LINE PITCH
+Build your spinning top part by part, then knock your friends out of the arena.
+
+DESCRIPTION
+BattleSpinners is a top-down pixel-art fighting game about spinning tops. Two to four players build a spinner from five parts, launch it into the arena and fight until one is left spinning, either by knocking rivals out of the stadium or by draining their stamina.
+
+Every part changes the spinner's stats, and two of them grant special abilities such as dashes, black holes or stamina theft. A posture system rewards pressure: break a spinner's balance and your next hit becomes a critical. Solo players climb an arcade ladder against bots with eight difficulty levels. BattleSpinners is made by a solo developer in Toulouse, France, and comes to Steam in 2027.
+
+KEY FEATURES
+- Local multiplayer for 2 to 4 players, free-for-all or in teams; online play through Steam Remote Play Together.
+- Five part slots with eight variants each. Every part shifts Attack, Defense, Stamina, Speed and Weight.
+- 16 special abilities, two per spinner, tied to the parts you equip.
+- Posture gauge: empty a rival's posture and your next hit lands as a critical.
+- Timed launch: a charged launch gauge decides your opening speed and direction.
+- Arcade ladder against bots across eight difficulty levels, in six arenas with their own hazards.
+
+USAGE
+Streaming and monetized videos are allowed without asking. No embargo.
+All assets in this archive may be used for editorial coverage and videos about BattleSpinners.
+BATTLE SPINNERS is a trademark of [First Last].

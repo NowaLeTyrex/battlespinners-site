@@ -1,0 +1,34 @@
+BATTLESPINNERS — FICHE TECHNIQUE
+
+Développeur et éditeur : Nowa Letyrex, développeur solo
+Basé à : Toulouse, France
+Date de sortie : 2027
+Plateformes : Windows et Linux, sur Steam
+Prix : à annoncer
+Joueurs : 1 à 4 sur le même écran ; en ligne via Steam Remote Play Together
+Langues : [À VÉRIFIER] anglais, français, espagnol
+Moteur : Godot
+Steam : https://store.steampowered.com/app/4324770/BattleSpinners/
+Site : https://battlespinnersgame.com/
+Contact presse : press@battlespinnersgame.com
+
+ACCROCHE
+Assemble ta toupie pièce par pièce, puis éjecte tes amis de l'arène.
+
+DESCRIPTION
+BattleSpinners est un jeu de combat de toupies en pixel art, en vue de dessus. De deux à quatre joueurs assemblent une toupie à partir de cinq pièces, la lancent dans l'arène et s'affrontent jusqu'à ce qu'il n'en reste qu'une en rotation, en éjectant leurs rivales du stade ou en épuisant leur endurance.
+
+Chaque pièce modifie les statistiques de la toupie, et deux d'entre elles donnent accès à des capacités spéciales : dash, trou noir, vol d'endurance… Un système de posture récompense la pression : faites perdre l'équilibre à une toupie et votre coup suivant devient critique. En solo, un mode arcade oppose le joueur à des bots sur huit niveaux de difficulté. BattleSpinners est développé par un développeur solo à Toulouse et sortira sur Steam en 2027.
+
+POINTS CLÉS
+- Multijoueur local de 2 à 4 joueurs, en chacun pour soi ou en équipes ; jeu en ligne via Steam Remote Play Together.
+- Cinq emplacements de pièces, huit variantes chacun. Chaque pièce modifie l'Attaque, la Défense, l'Endurance, la Vitesse et le Poids.
+- 16 capacités spéciales, deux par toupie, liées aux pièces équipées.
+- Jauge de posture : videz celle d'une rivale et votre coup suivant devient critique.
+- Lancement chronométré : une jauge de lancement détermine la vitesse et la direction de départ.
+- Mode arcade contre des bots sur huit niveaux de difficulté, dans six arènes aux pièges différents.
+
+CONDITIONS
+Streams et vidéos monétisées autorisés sans demande préalable. Aucun embargo.
+Tous les fichiers de cette archive peuvent être utilisés pour des articles et des vidéos consacrés à BattleSpinners.
+BATTLE SPINNERS est une marque de [Prénom Nom].

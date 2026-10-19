@@ -1,0 +1,316 @@
+/* =========================================================================
+   BattleSpinners — feuille de style du site (landing, /press, mentions légales)
+   -------------------------------------------------------------------------
+   Pour adapter à l'identité du jeu, ne touche qu'aux variables de :root :
+   remplace les couleurs par celles de ton key art, et dépose la police pixel
+   du jeu dans assets/fonts/display.woff2 (voir assets/fonts/README.txt).
+   ========================================================================= */
+
+@font-face {
+  font-family: "BattleSpinners Display";
+  src: url("fonts/display.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  /* Palette — à remplacer par les couleurs du jeu */
+  --arena-deep: #141737;   /* fond de page (sol de stade, bleu nuit) */
+  --arena: #1e2350;        /* surfaces légèrement relevées */
+  --line: #2f3670;         /* séparateurs */
+  --steel: #dde2ee;        /* texte principal */
+  --steel-dim: #a3abc8;    /* texte secondaire */
+  --spark: #ffc93c;        /* jaune « lancement » : action principale */
+  --spark-ink: #1b1530;    /* texte posé sur --spark */
+  --ring: #52d6ea;         /* cyan : liens, focus */
+  --todo: #ff7a93;         /* marquage des textes à compléter (à supprimer à la fin) */
+
+  /* Pas de pixel des coins crantés */
+  --px: 4px;
+
+  --font-display: "BattleSpinners Display", Verdana, "DejaVu Sans", sans-serif;
+  --font-body: Verdana, "DejaVu Sans", "Segoe UI", sans-serif;
+
+  --measure: 66ch;
+  --page: 1080px;
+  --gutter: 20px;
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--arena-deep);
+  color: var(--steel);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+img, video { display: block; max-width: 100%; height: auto; }
+
+/* Le pixel art reste net quand le navigateur l'agrandit */
+.pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
+
+a { color: var(--ring); text-underline-offset: 3px; }
+a:hover { color: var(--steel); }
+
+:focus-visible { outline: 3px solid var(--ring); outline-offset: 3px; }
+
+.wrap {
+  width: 100%;
+  max-width: var(--page);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.skip {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--spark); color: var(--spark-ink); padding: 8px 12px;
+}
+.skip:focus { left: 8px; top: 8px; z-index: 10; }
+
+/* ---------- Titres ---------- */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  margin: 0 0 0.6em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+h1 { font-size: clamp(1.9rem, 1.2rem + 3vw, 3.1rem); }
+h2 { font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2.1rem); }
+h3 { font-size: 1.15rem; }
+
+p, ul, dl { margin: 0 0 1em; }
+.prose { max-width: var(--measure); }
+.muted { color: var(--steel-dim); }
+.small { font-size: 0.875rem; }
+
+/* ---------- Bordure pixel (signature visuelle du site) ----------
+   Quatre ombres sans flou posées sur les côtés : les coins restent vides,
+   ce qui donne l'angle arrondi « en escalier » du pixel art. */
+.notch {
+  --b: var(--px);
+  --c: var(--steel);
+  --c-bottom: var(--c);
+  margin: var(--b);
+  box-shadow:
+    0 calc(var(--b) * -1) 0 var(--c),
+    0 var(--b) 0 var(--c-bottom),
+    calc(var(--b) * -1) 0 0 var(--c),
+    var(--b) 0 0 var(--c);
+}
+
+/* ---------- En-tête ---------- */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 20px;
+}
+.topbar .brand img { width: 220px; }
+.topbar nav { display: flex; gap: 18px; font-size: 0.875rem; }
+
+/* ---------- Hero ---------- */
+.hero { padding-bottom: 48px; }
+.hero-frame { margin-inline: var(--px); }
+.hero-frame video,
+.hero-frame img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--arena);
+}
+
+.pitch {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 1rem + 1.6vw, 2rem);
+  line-height: 1.25;
+  max-width: 30ch;
+  margin: 28px 0 24px;
+}
+
+.actions { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 28px; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 18px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  background: var(--spark);
+  color: var(--spark-ink);
+  --c: var(--spark);
+  --c-bottom: #b8861a;
+}
+.btn:hover { background: #ffdb70; color: var(--spark-ink); --c: #ffdb70; }
+.btn:active { transform: translateY(2px); --c-bottom: var(--c); }
+.btn:focus-visible { outline: none; --c: var(--ring); --c-bottom: var(--ring); }
+.btn .meta { font-weight: 400; font-size: 0.8125rem; opacity: 0.8; }
+
+.btn-ghost {
+  --b: 2px;
+  background: transparent;
+  color: var(--steel);
+  --c: var(--steel-dim);
+  --c-bottom: var(--steel-dim);
+  margin: 3px;
+}
+.btn-ghost:hover { background: var(--arena); color: var(--steel); --c: var(--steel); --c-bottom: var(--steel); }
+.btn-ghost:focus-visible { --c: var(--ring); --c-bottom: var(--ring); }
+
+.keyfacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px 24px;
+  margin: 0;
+  padding: 18px 0 0;
+  border-top: 2px solid var(--line);
+}
+.keyfacts dt { font-size: 0.8125rem; color: var(--steel-dim); }
+.keyfacts dd { margin: 2px 0 0; font-weight: 700; }
+
+/* ---------- Navigation interne ---------- */
+.jump {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--arena-deep);
+  border-block: 2px solid var(--line);
+}
+.jump ul {
+  display: flex; gap: 6px 22px; flex-wrap: wrap;
+  list-style: none; margin: 0; padding: 12px 0;
+  font-size: 0.875rem;
+}
+
+/* ---------- Sections ---------- */
+section { padding-block: 56px; border-top: 2px solid var(--line); scroll-margin-top: 56px; }
+section:first-of-type { border-top: 0; }
+.section-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; margin-bottom: 20px; }
+.section-head h2 { margin: 0; }
+
+.copy-block { position: relative; max-width: var(--measure); }
+.copy-btn {
+  font: inherit; font-size: 0.8125rem;
+  color: var(--ring); background: none; border: 0; padding: 0;
+  text-decoration: underline; text-underline-offset: 3px; cursor: pointer;
+}
+.copy-btn[data-done] { color: var(--steel-dim); text-decoration: none; }
+
+.features { padding-left: 1.2em; max-width: var(--measure); }
+.features li { margin-bottom: 0.5em; }
+.features li::marker { color: var(--spark); }
+
+/* ---------- Vidéo (lecteur YouTube chargé au clic) ---------- */
+.yt {
+  position: relative;
+  display: block; width: calc(100% - var(--px) * 2);
+  aspect-ratio: 16 / 9;
+  padding: 0; border: 0; cursor: pointer;
+  background: var(--arena);
+  color: var(--steel);
+}
+.yt img { width: 100%; height: 100%; object-fit: cover; }
+.yt .play {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  background: var(--spark); color: var(--spark-ink);
+  padding: 12px 20px; font-weight: 700;
+  box-shadow: 0 -4px 0 var(--spark), 0 4px 0 #b8861a, -4px 0 0 var(--spark), 4px 0 0 var(--spark);
+}
+.yt:hover .play { background: #ffdb70; }
+.yt:focus-visible { outline: none; }
+.yt:focus-visible .play { box-shadow: 0 -4px 0 var(--ring), 0 4px 0 var(--ring), -4px 0 0 var(--ring), 4px 0 0 var(--ring); }
+.yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.yt-note { margin-top: 10px; }
+
+.dl-list { list-style: none; padding: 0; display: grid; gap: 10px; }
+.dl-list a { font-weight: 700; }
+
+/* ---------- Galeries ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+}
+.shot { margin: 0; }
+.shot a { display: block; background: var(--steel-dim); padding: 2px; }
+.shot a:hover { background: var(--spark); }
+.shot img, .shot video { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--arena); }
+.shot video { outline: 2px solid var(--steel-dim); outline-offset: -2px; }
+.shot figcaption { font-size: 0.8125rem; color: var(--steel-dim); margin-top: 8px; }
+.shot figcaption a, .shot figcaption a:hover { display: inline; background: none; padding: 0; }
+
+/* Logos : chaque déclinaison est montrée sur le fond pour lequel elle est faite */
+.shot a.swatch {
+  display: grid;
+  place-items: center;
+  grid-template-columns: minmax(0, 1fr);
+  aspect-ratio: 16 / 9;
+  padding: 24px;
+  outline: 2px solid var(--line);
+  outline-offset: -2px;
+}
+.shot a.swatch:hover { outline-color: var(--spark); }
+.shot a.swatch img { width: auto; max-width: 100%; max-height: 100%; aspect-ratio: auto; object-fit: contain; background: none; }
+.shot a.on-dark { background: var(--arena); }
+.shot a.on-light { background: #f2f3f7; }
+.shot a.on-check {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(45deg, #d8dbe6 25%, transparent 25%, transparent 75%, #d8dbe6 75%),
+    linear-gradient(45deg, #d8dbe6 25%, transparent 25%, transparent 75%, #d8dbe6 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+/* ---------- Fiche technique ---------- */
+.facts {
+  display: grid;
+  grid-template-columns: minmax(140px, 220px) 1fr;
+  gap: 10px 24px;
+  max-width: 760px;
+}
+.facts dt { color: var(--steel-dim); }
+.facts dd { margin: 0; }
+
+/* ---------- Pied de page ---------- */
+footer { border-top: 2px solid var(--line); padding-block: 36px 48px; font-size: 0.875rem; color: var(--steel-dim); }
+footer ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+
+/* ---------- Textes à compléter (repérables d'un coup d'œil) ---------- */
+mark.todo {
+  background: none;
+  color: var(--todo);
+  outline: 2px dashed var(--todo);
+  outline-offset: 2px;
+}
+
+/* ---------- Page légale ---------- */
+.legal h2 { font-size: 1.3rem; margin-top: 2em; }
+.legal address { font-style: normal; }
+
+/* ---------- Petits écrans ---------- */
+@media (max-width: 640px) {
+  :root { --gutter: 16px; }
+  .topbar .brand img { width: 170px; }
+  .facts { grid-template-columns: 1fr; gap: 2px; }
+  .facts dd { margin-bottom: 12px; }
+  .btn { width: calc(100% - 8px); justify-content: center; }
+  section { padding-block: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
