@@ -1,16 +1,17 @@
 Police d'affichage (titres)
 ===========================
 
-Le site cherche ici un fichier nommé display.woff2 : la police pixel du jeu.
-Sans ce fichier, les titres s'affichent en Verdana.
+display.woff2 = Pixeloid Sans Bold de GGBotNet (https://ggbot.net), la police de
+l'UI du jeu (res://Assets/Fonts/PixeloidSansBold-OG894.ttf), convertie en WOFF2
+sans autre modification. Licence SIL Open Font License 1.1 : OFL.txt doit rester
+à côté du fichier.
 
-1. Prends la police utilisée dans le jeu (res://Assets/fonts/...).
-   Vérifie que sa licence autorise l'usage web (les polices OFL l'autorisent).
-2. Convertis-la en WOFF2 :
+Grille de la police : 9 px par em. Elle n'est nette qu'à 18, 27, 36 ou 45 px
+(voir les tailles de titres dans assets/site.css).
+
+Pour la régénérer :
      pip install fonttools brotli
-     python -m fontTools.ttLib.woff2 compress -o display.woff2 MaPolice.ttf
-3. Dépose display.woff2 dans ce dossier, avec le fichier de licence de la police
-   s'il en exige la diffusion (OFL.txt par exemple).
+     python -m fontTools.ttLib.woff2 compress -o display.woff2 PixeloidSansBold-OG894.ttf
 
 Ne charge pas la police depuis Google Fonts : l'appel transmet l'adresse IP des
 visiteurs à Google, ce que le site promet de ne pas faire (voir mentions légales).

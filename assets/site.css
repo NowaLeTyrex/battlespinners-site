@@ -1,27 +1,31 @@
 /* =========================================================================
    BattleSpinners — feuille de style du site (landing, /press, mentions légales)
    -------------------------------------------------------------------------
-   Pour adapter à l'identité du jeu, ne touche qu'aux variables de :root :
-   remplace les couleurs par celles de ton key art, et dépose la police pixel
-   du jeu dans assets/fonts/display.woff2 (voir assets/fonts/README.txt).
+   Les couleurs sont dans les variables de :root (palette du logo et du key art).
+   Police des titres : Pixeloid Sans Bold, la police de l'UI du jeu (OFL, voir
+   assets/fonts/OFL.txt). Sa grille fait 9 px par em : elle n'est nette qu'à
+   18, 27, 36 ou 45 px, d'où les tailles de titres fixes en px.
    ========================================================================= */
 
 @font-face {
   font-family: "BattleSpinners Display";
   src: url("fonts/display.woff2") format("woff2");
+  font-weight: 700;
   font-display: swap;
 }
 
 :root {
-  /* Palette — à remplacer par les couleurs du jeu */
-  --arena-deep: #141737;   /* fond de page (sol de stade, bleu nuit) */
-  --arena: #1e2350;        /* surfaces légèrement relevées */
-  --line: #2f3670;         /* séparateurs */
-  --steel: #dde2ee;        /* texte principal */
-  --steel-dim: #a3abc8;    /* texte secondaire */
-  --spark: #ffc93c;        /* jaune « lancement » : action principale */
-  --spark-ink: #1b1530;    /* texte posé sur --spark */
-  --ring: #52d6ea;         /* cyan : liens, focus */
+  /* Palette tirée du logo (orange, cyan du halo) et du key art (nuit violette) */
+  --arena-deep: #0e0c24;   /* fond de page */
+  --arena: #1a1838;        /* surfaces légèrement relevées */
+  --line: #2b2951;         /* séparateurs */
+  --steel: #e6ecf6;        /* texte principal */
+  --steel-dim: #a9adcb;    /* texte secondaire */
+  --spark: #fc9036;        /* orange du logo : action principale */
+  --spark-hi: #ffc475;     /* survol de l'action principale */
+  --spark-lo: #f13700;     /* arête basse des boutons orange */
+  --spark-ink: #1a0800;    /* texte posé sur --spark */
+  --ring: #9af5ff;         /* cyan du halo du logo : liens, focus */
   --todo: #ff7a93;         /* marquage des textes à compléter (à supprimer à la fin) */
 
   /* Pas de pixel des coins crantés */
@@ -81,11 +85,12 @@ h1, h2, h3 {
   line-height: 1.15;
   margin: 0 0 0.6em;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  font-synthesis: none;
 }
-h1 { font-size: clamp(1.9rem, 1.2rem + 3vw, 3.1rem); }
-h2 { font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2.1rem); }
-h3 { font-size: 1.15rem; }
+/* Multiples de 9 px : la grille de la police pixel */
+h1 { font-size: 36px; }
+h2 { font-size: 27px; }
+h3 { font-size: 18px; }
 
 p, ul, dl { margin: 0 0 1em; }
 .prose { max-width: var(--measure); }
@@ -110,12 +115,14 @@ p, ul, dl { margin: 0 0 1em; }
 /* ---------- En-tête ---------- */
 .topbar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   padding-block: 20px;
 }
-.topbar .brand img { width: 220px; }
+/* logo.png est le logo natif ×2 : 335 px CSS = 1 pixel du logo par pixel CSS */
+.topbar .brand img { width: 335px; }
 .topbar nav { display: flex; gap: 18px; font-size: 0.875rem; }
 
 /* ---------- Hero ---------- */
@@ -131,7 +138,7 @@ p, ul, dl { margin: 0 0 1em; }
 
 .pitch {
   font-family: var(--font-display);
-  font-size: clamp(1.35rem, 1rem + 1.6vw, 2rem);
+  font-size: 27px;
   line-height: 1.25;
   max-width: 30ch;
   margin: 28px 0 24px;
@@ -154,9 +161,9 @@ p, ul, dl { margin: 0 0 1em; }
   background: var(--spark);
   color: var(--spark-ink);
   --c: var(--spark);
-  --c-bottom: #b8861a;
+  --c-bottom: var(--spark-lo);
 }
-.btn:hover { background: #ffdb70; color: var(--spark-ink); --c: #ffdb70; }
+.btn:hover { background: var(--spark-hi); color: var(--spark-ink); --c: var(--spark-hi); }
 .btn:active { transform: translateY(2px); --c-bottom: var(--c); }
 .btn:focus-visible { outline: none; --c: var(--ring); --c-bottom: var(--ring); }
 .btn .meta { font-weight: 400; font-size: 0.8125rem; opacity: 0.8; }
@@ -224,12 +231,13 @@ section:first-of-type { border-top: 0; }
 }
 .yt img { width: 100%; height: 100%; object-fit: cover; }
 .yt .play {
-  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  /* En bas de l'affiche : centré, le bouton masquerait l'emblème du logo */
+  position: absolute; left: 50%; bottom: 8%; transform: translateX(-50%);
   background: var(--spark); color: var(--spark-ink);
   padding: 12px 20px; font-weight: 700;
-  box-shadow: 0 -4px 0 var(--spark), 0 4px 0 #b8861a, -4px 0 0 var(--spark), 4px 0 0 var(--spark);
+  box-shadow: 0 -4px 0 var(--spark), 0 4px 0 var(--spark-lo), -4px 0 0 var(--spark), 4px 0 0 var(--spark);
 }
-.yt:hover .play { background: #ffdb70; }
+.yt:hover .play { background: var(--spark-hi); }
 .yt:focus-visible { outline: none; }
 .yt:focus-visible .play { box-shadow: 0 -4px 0 var(--ring), 0 4px 0 var(--ring), -4px 0 0 var(--ring), 4px 0 0 var(--ring); }
 .yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
@@ -257,13 +265,15 @@ section:first-of-type { border-top: 0; }
   display: grid;
   place-items: center;
   grid-template-columns: minmax(0, 1fr);
+  /* Ligne de hauteur fixée par l'aspect-ratio : l'image peut s'y caler en height: 100% */
+  grid-template-rows: minmax(0, 1fr);
   aspect-ratio: 16 / 9;
   padding: 24px;
   outline: 2px solid var(--line);
   outline-offset: -2px;
 }
 .shot a.swatch:hover { outline-color: var(--spark); }
-.shot a.swatch img { width: auto; max-width: 100%; max-height: 100%; aspect-ratio: auto; object-fit: contain; background: none; }
+.shot a.swatch img { width: 100%; height: 100%; aspect-ratio: auto; object-fit: contain; background: none; }
 .shot a.on-dark { background: var(--arena); }
 .shot a.on-light { background: #f2f3f7; }
 .shot a.on-check {
@@ -304,7 +314,8 @@ mark.todo {
 /* ---------- Petits écrans ---------- */
 @media (max-width: 640px) {
   :root { --gutter: 16px; }
-  .topbar .brand img { width: 170px; }
+  .topbar .brand img { width: 100%; max-width: 335px; }
+  h1 { font-size: 27px; }
   .facts { grid-template-columns: 1fr; gap: 2px; }
   .facts dd { margin-bottom: 12px; }
   .btn { width: calc(100% - 8px); justify-content: center; }

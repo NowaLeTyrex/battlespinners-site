@@ -6,8 +6,11 @@ Pour chaque PNG du dossier d'entrée (ex. _captures/01-four-player-melee.png) :
   - presskit-src/04_screenshots/1080p/battlespinners_<nom>.png
   - presskit-src/04_screenshots/4k/battlespinners_<nom>_4k.png   3840×2160
 
-Tous les changements de taille se font au plus proche voisin et par facteur entier
-(÷3 et ×2), pour que chaque pixel du jeu reste un carré net.
+Tous les changements de taille se font par facteur entier. Les agrandissements (×2)
+passent au plus proche voisin. Les réductions (÷3) font la moyenne de chaque bloc :
+même résultat que le plus proche voisin sur le pixel art aligné, mais le jeu tourne
+en stretch canvas_items, donc rotations, effets et texte sont rendus en 1080p et
+seraient crénelés si l'on ne gardait qu'un pixel sur trois.
 
 Usage :  python tools/prepare_images.py _captures
 Prérequis : pip install pillow
@@ -33,6 +36,8 @@ def load_as_1080p(path: Path) -> Image.Image | None:
         return img
     # Capture à la résolution native ou à un multiple entier : on ramène en 1080p sans flou
     if w * NATIVE[1] == h * NATIVE[0] and w % NATIVE[0] == 0:
+        if w > FULL[0] and w % FULL[0] == 0:
+            return img.reduce(w // FULL[0])
         return img.resize(FULL, Image.NEAREST)
     print(f"  ! {path.name} : {w}×{h} n'est pas un multiple entier de 640×360, ignorée")
     return None
@@ -59,7 +64,7 @@ def main() -> int:
         base = load_as_1080p(path)
         if base is None:
             continue
-        thumb = base.resize(NATIVE, Image.NEAREST)
+        thumb = base.reduce(FULL[0] // NATIVE[0])
         uhd = base.resize(UHD, Image.NEAREST)
 
         sizes = [

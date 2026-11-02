@@ -2,15 +2,18 @@ BATTLESPINNERS — FICHE TECHNIQUE
 
 Développeur et éditeur : Nowa Letyrex, développeur solo
 Basé à : Toulouse, France
-Date de sortie : 2027
-Plateformes : Windows et Linux, sur Steam
+Date de sortie : mars 2027
+Démo gratuite : sur Steam à partir du 11 novembre 2026, avec le mode histoire et Remote Play Together
+Plateformes : Windows, sur Steam
 Prix : à annoncer
 Joueurs : 1 à 4 sur le même écran ; en ligne via Steam Remote Play Together
-Langues : [À VÉRIFIER] anglais, français, espagnol
+Langues : anglais, français, espagnol (démo : anglais et français)
 Moteur : Godot
 Steam : https://store.steampowered.com/app/4324770/BattleSpinners/
 Site : https://battlespinnersgame.com/
+Dossier de presse : https://battlespinnersgame.com/press/fr/
 Contact presse : press@battlespinnersgame.com
+Réseaux : https://bsky.app/profile/nowaletyrex.bsky.social, https://x.com/NowaLeTyrex, https://www.instagram.com/nowa_letyrex/, https://www.youtube.com/@NowaLetyrex, https://discord.gg/fsGA7gECzQ
 
 ACCROCHE
 Assemble ta toupie pièce par pièce, puis éjecte tes amis de l'arène.
@@ -18,15 +21,17 @@ Assemble ta toupie pièce par pièce, puis éjecte tes amis de l'arène.
 DESCRIPTION
 BattleSpinners est un jeu de combat de toupies en pixel art, en vue de dessus. De deux à quatre joueurs assemblent une toupie à partir de cinq pièces, la lancent dans l'arène et s'affrontent jusqu'à ce qu'il n'en reste qu'une en rotation, en éjectant leurs rivales du stade ou en épuisant leur endurance.
 
-Chaque pièce modifie les statistiques de la toupie, et deux d'entre elles donnent accès à des capacités spéciales : dash, trou noir, vol d'endurance… Un système de posture récompense la pression : faites perdre l'équilibre à une toupie et votre coup suivant devient critique. En solo, un mode arcade oppose le joueur à des bots sur huit niveaux de difficulté. BattleSpinners est développé par un développeur solo à Toulouse et sortira sur Steam en 2027.
+Chaque pièce modifie les statistiques de la toupie, et deux d'entre elles donnent accès à des capacités spéciales : dash, trou noir, vol d'endurance… Un système de posture récompense la pression : faites perdre l'équilibre à une toupie et votre coup suivant devient critique. En solo, un mode arcade oppose le joueur à des bots sur huit niveaux de difficulté. BattleSpinners est développé par un développeur solo à Toulouse et sortira sur Steam en mars 2027. Une démo gratuite, avec le mode histoire et Remote Play Together, est disponible sur Steam à partir du 11 novembre 2026.
 
 POINTS CLÉS
 - Multijoueur local de 2 à 4 joueurs, en chacun pour soi ou en équipes ; jeu en ligne via Steam Remote Play Together.
-- Cinq emplacements de pièces, huit variantes chacun. Chaque pièce modifie l'Attaque, la Défense, l'Endurance, la Vitesse et le Poids.
-- 16 capacités spéciales, deux par toupie, liées aux pièces équipées.
+- Cinq emplacements de pièces, neuf variantes chacun. Chaque pièce modifie l'Attaque, la Défense, l'Endurance, la Vitesse et le Poids.
+- 18 capacités spéciales, deux par toupie, liées aux pièces équipées.
 - Jauge de posture : videz celle d'une rivale et votre coup suivant devient critique.
 - Lancement chronométré : une jauge de lancement détermine la vitesse et la direction de départ.
-- Mode arcade contre des bots sur huit niveaux de difficulté, dans six arènes aux pièges différents.
+- Des bots sur huit niveaux de difficulté, et un mode arcade en Normal et Difficile avec des combats de horde.
+- Des arènes aux pièges différents : trous dans le sol, bumpers…
+- Un mode histoire façon visual novel, dont les personnages sont des toupies qui parlent.
 
 CONDITIONS
 Streams et vidéos monétisées autorisés sans demande préalable. Aucun embargo.

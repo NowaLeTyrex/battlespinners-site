@@ -2,15 +2,18 @@ BATTLESPINNERS — FACT SHEET
 
 Developer and publisher: Nowa Letyrex, solo developer
 Based in: Toulouse, France
-Release date: 2027
-Platforms: Windows and Linux, on Steam
+Release date: March 2027
+Free demo: on Steam from 11 November 2026, including the story mode and Remote Play Together
+Platforms: Windows, on Steam
 Price: To be announced
 Players: 1 to 4 on one screen; online through Steam Remote Play Together
-Languages: [TO CHECK] English, French, Spanish
+Languages: English, French, Spanish (demo: English and French)
 Engine: Godot
 Steam: https://store.steampowered.com/app/4324770/BattleSpinners/
 Website: https://battlespinnersgame.com/
+Press kit: https://battlespinnersgame.com/press/
 Press contact: press@battlespinnersgame.com
+Social: https://bsky.app/profile/nowaletyrex.bsky.social, https://x.com/NowaLeTyrex, https://www.instagram.com/nowa_letyrex/, https://www.youtube.com/@NowaLetyrex, https://discord.gg/fsGA7gECzQ
 
 ONE-LINE PITCH
 Build your spinning top part by part, then knock your friends out of the arena.
@@ -18,15 +21,17 @@ Build your spinning top part by part, then knock your friends out of the arena.
 DESCRIPTION
 BattleSpinners is a top-down pixel-art fighting game about spinning tops. Two to four players build a spinner from five parts, launch it into the arena and fight until one is left spinning, either by knocking rivals out of the stadium or by draining their stamina.
 
-Every part changes the spinner's stats, and two of them grant special abilities such as dashes, black holes or stamina theft. A posture system rewards pressure: break a spinner's balance and your next hit becomes a critical. Solo players climb an arcade ladder against bots with eight difficulty levels. BattleSpinners is made by a solo developer in Toulouse, France, and comes to Steam in 2027.
+Every part changes the spinner's stats, and two of them grant special abilities such as dashes, black holes or stamina theft. A posture system rewards pressure: break a spinner's balance and your next hit becomes a critical. Solo players climb an arcade ladder against bots with eight difficulty levels. BattleSpinners is made by a solo developer in Toulouse, France, and comes to Steam in March 2027. A free demo, including the story mode and Remote Play Together, is available on Steam from 11 November 2026.
 
 KEY FEATURES
 - Local multiplayer for 2 to 4 players, free-for-all or in teams; online play through Steam Remote Play Together.
-- Five part slots with eight variants each. Every part shifts Attack, Defense, Stamina, Speed and Weight.
-- 16 special abilities, two per spinner, tied to the parts you equip.
+- Five part slots with nine variants each. Every part shifts Attack, Defense, Stamina, Speed and Weight.
+- 18 special abilities, two per spinner, tied to the parts you equip.
 - Posture gauge: empty a rival's posture and your next hit lands as a critical.
 - Timed launch: a charged launch gauge decides your opening speed and direction.
-- Arcade ladder against bots across eight difficulty levels, in six arenas with their own hazards.
+- Bots with eight difficulty levels, and an arcade mode in Normal and Hard with horde fights.
+- Arenas with their own hazards: holes in the floor, bumpers and more.
+- A story mode told as a visual novel, starring talking spinning tops.
 
 USAGE
 Streaming and monetized videos are allowed without asking. No embargo.
