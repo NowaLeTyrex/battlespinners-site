@@ -25,7 +25,7 @@ Chaque pièce modifie les statistiques de la toupie, et deux d'entre elles donne
 
 POINTS CLÉS
 - Multijoueur local de 2 à 4 joueurs, en chacun pour soi ou en équipes ; jeu en ligne via Steam Remote Play Together.
-- Cinq emplacements de pièces, neuf variantes chacun. Chaque pièce modifie l'Attaque, la Défense, l'Endurance, la Vitesse et le Poids.
+- Cinq emplacements de pièces, 16 variantes chacun dans le jeu complet (8 dans la démo). Chaque pièce modifie l'Attaque, la Défense, l'Endurance, la Vitesse et le Poids.
 - 18 capacités spéciales, deux par toupie, liées aux pièces équipées.
 - Jauge de posture : videz celle d'une rivale et votre coup suivant devient critique.
 - Lancement chronométré : une jauge de lancement détermine la vitesse et la direction de départ.
@@ -35,5 +35,6 @@ POINTS CLÉS
 
 CONDITIONS
 Streams et vidéos monétisées autorisés sans demande préalable. Aucun embargo.
+La bande-son du jeu et la musique du trailer peuvent être utilisées en stream et dans des vidéos monétisées. En cas de réclamation de droits d'auteur malgré tout : press@battlespinnersgame.com.
 Tous les fichiers de cette archive peuvent être utilisés pour des articles et des vidéos consacrés à BattleSpinners.
-BATTLE SPINNERS est une marque de [Prénom Nom].
+BattleSpinners est une marque de Noah Delcourt.

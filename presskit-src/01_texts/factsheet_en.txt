@@ -25,7 +25,7 @@ Every part changes the spinner's stats, and two of them grant special abilities 
 
 KEY FEATURES
 - Local multiplayer for 2 to 4 players, free-for-all or in teams; online play through Steam Remote Play Together.
-- Five part slots with nine variants each. Every part shifts Attack, Defense, Stamina, Speed and Weight.
+- Five part slots with 16 variants each in the full game (8 in the demo). Every part shifts Attack, Defense, Stamina, Speed and Weight.
 - 18 special abilities, two per spinner, tied to the parts you equip.
 - Posture gauge: empty a rival's posture and your next hit lands as a critical.
 - Timed launch: a charged launch gauge decides your opening speed and direction.
@@ -35,5 +35,6 @@ KEY FEATURES
 
 USAGE
 Streaming and monetized videos are allowed without asking. No embargo.
+The game's soundtrack and the trailer music are cleared for streams and monetized videos. If a video still gets a copyright claim, email press@battlespinnersgame.com.
 All assets in this archive may be used for editorial coverage and videos about BattleSpinners.
-BATTLE SPINNERS is a trademark of [First Last].
+BattleSpinners is a trademark of Noah Delcourt.
