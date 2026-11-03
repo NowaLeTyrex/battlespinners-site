@@ -9,6 +9,7 @@ Price: To be announced
 Players: 1 to 4 on one screen; online through Steam Remote Play Together
 Languages: English, French, Spanish (demo: English and French)
 Engine: Godot
+AI use: no generative AI in the game's content. Art, animation, music, sound effects, writing and translations are all made by people. AI coding assistants were used for part of the programming.
 Steam: https://store.steampowered.com/app/4324770/BattleSpinners/
 Website: https://battlespinnersgame.com/
 Press kit: https://battlespinnersgame.com/press/

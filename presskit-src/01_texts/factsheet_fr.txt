@@ -9,6 +9,7 @@ Prix : à annoncer
 Joueurs : 1 à 4 sur le même écran ; en ligne via Steam Remote Play Together
 Langues : anglais, français, espagnol (démo : anglais et français)
 Moteur : Godot
+Usage de l'IA : aucune IA générative dans le contenu du jeu. Graphismes, animations, musique, effets sonores, textes et traductions sont entièrement réalisés par des humains. Des assistants de programmation à base d'IA ont servi pour une partie du code.
 Steam : https://store.steampowered.com/app/4324770/BattleSpinners/
 Site : https://battlespinnersgame.com/
 Dossier de presse : https://battlespinnersgame.com/press/fr/
