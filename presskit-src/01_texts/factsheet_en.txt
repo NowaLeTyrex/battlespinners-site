@@ -26,7 +26,7 @@ Every part changes the spinner's stats, and two of them grant special abilities 
 KEY FEATURES
 - Local multiplayer for 2 to 4 players, free-for-all or in teams; online play through Steam Remote Play Together.
 - Five part slots with 16 variants each in the full game (8 in the demo). Every part shifts Attack, Defense, Stamina, Speed and Weight.
-- 18 special abilities, two per spinner, tied to the parts you equip.
+- 32 special abilities in the full game (16 in the demo), two per spinner, tied to the parts you equip.
 - Posture gauge: empty a rival's posture and your next hit lands as a critical.
 - Timed launch: a charged launch gauge decides your opening speed and direction.
 - Bots with eight difficulty levels, and an arcade mode in Normal and Hard with horde fights.
@@ -36,7 +36,7 @@ KEY FEATURES
 
 USAGE
 Streaming and monetized videos are allowed without asking.
-Embargo: news about the game, the trailer and the assets in this archive can be published now. Hands-on coverage of the demo or the press build (previews, impressions, your own gameplay videos and streams) can go live from 11 November 2026 at 10:00 CET (09:00 UTC, 1:00 AM PST), when the free demo launches on Steam.
+Embargo: news about the game, the trailer and the assets in this archive can be published now. Hands-on coverage of the demo, including early access keys (previews, impressions, your own gameplay videos and streams) can go live from 11 November 2026 at 10:00 CET (09:00 UTC, 1:00 AM PST), when the free demo launches on Steam.
 The game's soundtrack and the trailer music are cleared for streams and monetized videos. If a video still gets a copyright claim, email press@battlespinnersgame.com.
 All assets in this archive may be used for editorial coverage and videos about BattleSpinners.
 BattleSpinners is a trademark of Noah Delcourt.

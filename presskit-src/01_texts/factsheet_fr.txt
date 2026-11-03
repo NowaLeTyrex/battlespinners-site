@@ -26,7 +26,7 @@ Chaque pièce modifie les statistiques de la toupie, et deux d'entre elles donne
 POINTS CLÉS
 - Multijoueur local de 2 à 4 joueurs, en chacun pour soi ou en équipes ; jeu en ligne via Steam Remote Play Together.
 - Cinq emplacements de pièces, 16 variantes chacun dans le jeu complet (8 dans la démo). Chaque pièce modifie l'Attaque, la Défense, l'Endurance, la Vitesse et le Poids.
-- 18 capacités spéciales, deux par toupie, liées aux pièces équipées.
+- 32 capacités spéciales dans le jeu complet (16 dans la démo), deux par toupie, liées aux pièces équipées.
 - Jauge de posture : videz celle d'une rivale et votre coup suivant devient critique.
 - Lancement chronométré : une jauge de lancement détermine la vitesse et la direction de départ.
 - Des bots sur huit niveaux de difficulté, et un mode arcade en Normal et Difficile avec des combats de horde.
@@ -36,7 +36,7 @@ POINTS CLÉS
 
 CONDITIONS
 Streams et vidéos monétisées autorisés sans demande préalable.
-Embargo : les news sur le jeu, le trailer et les fichiers de cette archive peuvent être publiés dès maintenant. Les prises en main de la démo ou de la version presse (previews, impressions, vos propres vidéos de gameplay et streams) peuvent paraître à partir du 11 novembre 2026 à 10 h, heure de Paris (9 h UTC), à la sortie de la démo gratuite sur Steam.
+Embargo : les news sur le jeu, le trailer et les fichiers de cette archive peuvent être publiés dès maintenant. Les prises en main de la démo, y compris en accès anticipé (previews, impressions, vos propres vidéos de gameplay et streams) peuvent paraître à partir du 11 novembre 2026 à 10 h, heure de Paris (9 h UTC), à la sortie de la démo gratuite sur Steam.
 La bande-son du jeu et la musique du trailer peuvent être utilisées en stream et dans des vidéos monétisées. En cas de réclamation de droits d'auteur malgré tout : press@battlespinnersgame.com.
 Tous les fichiers de cette archive peuvent être utilisés pour des articles et des vidéos consacrés à BattleSpinners.
 BattleSpinners est une marque de Noah Delcourt.
