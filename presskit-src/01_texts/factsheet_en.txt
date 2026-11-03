@@ -30,6 +30,7 @@ KEY FEATURES
 - Posture gauge: empty a rival's posture and your next hit lands as a critical.
 - Timed launch: a charged launch gauge decides your opening speed and direction.
 - Bots with eight difficulty levels, and an arcade mode in Normal and Hard with horde fights.
+- Boss fights against the Sentinel and the Hive, in their own mode and at the end of Hard arcade runs.
 - Arenas with their own hazards: holes in the floor, bumpers and more.
 - A story mode told as a visual novel, starring talking spinning tops.
 

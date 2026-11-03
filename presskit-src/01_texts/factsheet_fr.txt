@@ -30,6 +30,7 @@ POINTS CLÉS
 - Jauge de posture : videz celle d'une rivale et votre coup suivant devient critique.
 - Lancement chronométré : une jauge de lancement détermine la vitesse et la direction de départ.
 - Des bots sur huit niveaux de difficulté, et un mode arcade en Normal et Difficile avec des combats de horde.
+- Des combats de boss contre la Sentinelle et la Ruche, dans un mode dédié et en fin de partie d'arcade en Difficile.
 - Des arènes aux pièges différents : trous dans le sol, bumpers…
 - Un mode histoire façon visual novel, dont les personnages sont des toupies qui parlent.
 
