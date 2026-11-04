@@ -43,7 +43,7 @@
     });
   });
 
-  // 3. Boutons « Copier » pour les textes que les médias reprennent tels quels.
+  // 3. Boutons « Copier le texte ».
   document.querySelectorAll("[data-copy]").forEach(function (button) {
     button.hidden = !navigator.clipboard;
     button.addEventListener("click", function () {

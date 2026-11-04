@@ -26,7 +26,6 @@
   --spark-lo: #f13700;     /* arête basse des boutons orange */
   --spark-ink: #1a0800;    /* texte posé sur --spark */
   --ring: #9af5ff;         /* cyan du halo du logo : liens, focus */
-  --todo: #ff7a93;         /* marquage des textes à compléter (à supprimer à la fin) */
 
   /* Pas de pixel des coins crantés */
   --px: 4px;
@@ -298,14 +297,6 @@ section:first-of-type { border-top: 0; }
 /* ---------- Pied de page ---------- */
 footer { border-top: 2px solid var(--line); padding-block: 36px 48px; font-size: 0.875rem; color: var(--steel-dim); }
 footer ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; }
-
-/* ---------- Textes à compléter (repérables d'un coup d'œil) ---------- */
-mark.todo {
-  background: none;
-  color: var(--todo);
-  outline: 2px dashed var(--todo);
-  outline-offset: 2px;
-}
 
 /* ---------- Page légale ---------- */
 .legal h2 { font-size: 1.3rem; margin-top: 2em; }
