@@ -11,7 +11,7 @@
 | 05_gifs/           | GIF 640×360, remplis par tools/make_loops.py                | non         | oui (+ chaque GIF seul)  |
 | 06_videos/loops/   | MP4 1080p des boucles, remplis par tools/make_loops.py      | non         | oui                      |
 | 06_videos/broll/   | rushes 16:9 sans musique, 30 à 60 s                          | non         | non : ZIP séparé         |
-| trailer/           | battlespinners_announcement_trailer_1080p.mp4 (pas de 4K)   | non         | non : fichiers séparés   |
+| trailer/           | battlespinners_demo_trailer_1080p.mp4 (pas de 4K)           | non         | non : fichiers séparés   |
 
 Les fichiers non versionnés vivent uniquement sur ton disque et dans les releases :
 garde une sauvegarde de ce dossier ailleurs (disque externe, cloud).

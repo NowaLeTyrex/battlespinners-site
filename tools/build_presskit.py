@@ -4,7 +4,7 @@ Sortie dans dist/ :
   battlespinners_presskit.zip     textes, logos, key art, captures 1080p et 4K, GIF, boucles
   battlespinners_broll.zip        rushes sans musique (presskit-src/06_videos/broll)
   battlespinners_loop_*.gif       chaque GIF, téléchargeable seul depuis la page
-  battlespinners_announcement_trailer_*.mp4   copiés depuis presskit-src/trailer/
+  battlespinners_*_trailer_*.mp4           copiés depuis presskit-src/trailer/
 
 Usage :
   python tools/build_presskit.py                     construit dist/ et affiche les tailles à reporter dans la page
