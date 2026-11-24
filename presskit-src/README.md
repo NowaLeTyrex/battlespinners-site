@@ -12,6 +12,7 @@
 | 06_videos/loops/   | MP4 1080p des boucles, remplis par tools/make_loops.py      | non         | oui                      |
 | 06_videos/broll/   | rushes 16:9 sans musique, 30 à 60 s                          | non         | non : ZIP séparé         |
 | trailer/           | battlespinners_demo_trailer_1080p.mp4 (pas de 4K)           | non         | non : fichiers séparés   |
+|                    | battlespinners_gameplay_no_music_1080p.mp4                  | non         | non : fichiers séparés   |
 
 Les fichiers non versionnés vivent uniquement sur ton disque et dans les releases :
 garde une sauvegarde de ce dossier ailleurs (disque externe, cloud).
